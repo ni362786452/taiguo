@@ -73,7 +73,341 @@ a{
     text-overflow:ellipsis;
     overflow:hidden
 }
+.mt-1{
+	margin-top: 0.1rem;
+}
 .box{
-	background: #EEEEEE;
+	background: #E7E7E7;
 	height: 100%;
+}
+/*顶部导航栏*/
+.tg_top{
+	width: 100%;
+	height: 0.55rem;
+	background: #FED930;
+	color: #000;
+	padding: 0 0.17rem;
+	display: flex;
+	box-sizing: border-box;
+}
+.tg_top img{
+height: 0.45rem;
+}
+.tg_top span{
+	display: block;
+	height: 0.25rem;
+	margin-top: 0.14rem;
+	line-height: 0.25rem;
+	padding-left: 2px;
+	font-size: 0.25rem;
+	border-left: 1px solid #000;
+
+}
+/*图片轮播*/
+.focus{
+	width: 100%;
+	height: 2.22rem;
+	position: relative;
+	font-size: 0;
+	overflow: hidden;
+}
+.lbimg{
+	position: relative;
+}
+.lbimg li{
+	width: 100%;
+	height: 2.22rem;
+}
+.lbimg img{
+	width: 100%;
+	height: 2.22rem;
+}
+.xyd_box{
+    position: absolute;
+    bottom: 0.1rem;
+    padding: 0 6px;
+    left: 50%;
+    margin-left: -0.4rem;
+    height: 0.1rem;
+    z-index: 2;
+}
+.xyd_box ul{
+    display: flex;
+}
+.xyd_box li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background: rgba(255,255,255,0.5);
+}
+.xyd_box .xyd_b{
+    background: rgba(255,255,255,1);
+}
+/*省钱玩法*/
+.tg_sq{
+	height: 1.7rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background: #fff;
+}
+.sqBox{
+	padding-top: 0.1rem;
+	box-sizing: border-box;
+	display: flex;
+	width: 1.5rem;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.sqBox img{
+	margin: 0 auto;
+	height: 0.83rem;
+	width: 0.83rem;
+}
+.sqBox p{
+	text-align: center;
+	font-size: 0.21rem;
+}
+.tg_img1{
+	width: 100%;
+	font-style: 0;
+}
+.tg_img1 img{
+	display: block;
+}
+.tg_img1Txt{
+	width: 100%;
+	height: 1.4rem;
+	font-size: 0.18rem;
+	padding: 0.2rem;
+	box-sizing: border-box;
+	background: #fff;
+	text-align: center;
+	border-bottom: 2px dashed #000;
+}
+.tg_img1Txt p{
+	line-height: 0.3rem;
+}
+.tg_img1Txt b{
+	font-weight: bold;
+	color: #4B4B4B;
+}
+.tg_img1Txt span{
+	font-weight: bold;
+	color: #FFB001
+}
+.tg_imgbg{
+	background: url(../images/index/index-pic_16.jpg) no-repeat;
+	width: 100%;
+	background-size: contain;
+	padding-top: 7.2rem;
+}
+.tg_imgbgTxt{
+	/*padding-top: 7.3rem;*/
+	text-align: center;
+}
+.tg_imgbgTxt p{
+	font-size: 0.31rem;
+	line-height: 0.31rem;
+	color: #FF2E4D;
+}
+.tg_imgbgTxt p b{
+	font-weight: bold;
+}
+.tg_imgbgTxt span{
+	display: block;
+	background: #fff;
+	text-align: center;
+	padding-top: 0.2rem;
+	color: #3E3E3E;
+	font-weight: bold;
+	font-size: 0.18rem;
+}
+.tg_zyx{
+	padding: 0.3rem;
+	background: #fff;
+}
+.tg_zyx p{
+	font-size: 0.18rem;
+	text-align: center;
+	color: #3B3B3B;
+	line-height: 0.2rem;
+}
+.tg_zyx b{
+	font-weight: bold;
+}
+.tg_zyx span{
+	font-weight: bold;
+	color: #FF2E4D;
+}
+.tg_tlr{
+	width: 100%;
+	height: 1.2rem;
+	background: #FEDB35;
+	padding:0.3rem;
+	box-sizing: border-box;
+}
+.tg_tlr p{
+	color: #007ADF;
+	text-align: center;
+	font-size: 0.35rem;
+}
+.tg_tlr b{
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+.tg_tlr span{
+	font-weight: bold;
+}
+/*泰国自由行对比*/
+.tg_yn{
+	display: flex;
+}
+.yn_box,.yn_box1{
+	width: 50%;
+	background: #fff;
+	height: 2.81rem;
+	padding: 0.1rem 0.2rem;
+	box-sizing: border-box;
+	position: relative;
+}
+.yn_box::after{
+	content: "";
+	height: 2.28rem;
+	width: 0.1rem;
+	border-right: 1px dashed #D5D5D5;
+	position: absolute;
+	right: 0;
+	top: 0.25rem;
+}
+.yn_box img,.yn_box1 img{
+	margin: 0 auto;
+}
+.yn_box p,.yn_box1 p{
+	margin-top: 5px;
+	font-size: 0.18rem;
+	text-align: center;
+	line-height: 0.3rem;
+	color: #818181
+}
+.yn_box1 p{
+	color: #000;
+}
+/*泰国自由行的内容*/
+.tg_inner1{
+	padding: 0.17rem;
+	background: #fff;
+}
+.tg_inner1 h2{
+	font-size: 0.22rem;
+	font-weight: bold;
+	line-height: 22px;
+	color: #3B3B3B;
+}
+.tg_inner1 h2 span{
+	display: inline-block;
+	width: 0.48rem;
+	height: 0.45rem;
+	vertical-align: bottom;
+}
+.span1{
+	background: url(../images/index/sprite-index.png) no-repeat 0px 10px;
+}
+.span2{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -41px;
+}
+.span3{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -97px;
+}
+.span4{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -160px;
+}
+.span5{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -221px;
+}
+.span6{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -221px;
+}
+.span7{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -293px;
+}
+.span8{
+	background: url(../images/index/sprite-index.png) no-repeat 0px -362px;
+}
+.tg_inner1>img{
+	margin:0.15rem 0;
+	display: block;
+}
+.tg_inner1 p{
+	font-size: 0.18rem;
+	color: #3B3B3B;
+}
+/*二维码*/
+.tg_ewm{
+	background: #fff;
+}
+.tg_ewm>img{
+	display: block;
+}
+.ewm_text{
+	padding: 0.45rem;
+	text-align: center;
+}
+.ewm_text p{
+	font-size: 0.25rem;
+	font-weight: bold;
+	color: #000;
+}
+.ewm_text span{
+	display: block;
+	color: #3E3E3E;
+	font-size: 0.18rem;
+	line-height: 0.3rem;
+}
+.ewm_text p>s{
+	display: inline-block;
+	border-radius: 0.12rem;
+	background: #FFB001;
+	text-decoration: none;
+	width: 1.9rem;
+	height: 0.42rem;
+}
+.tg_fw>img{
+	width: 100%;
+	display: block;
+}
+.tg_fw{
+	background: #212121;
+}
+.fw_text{
+	padding: 0.5rem;
+}
+.tg_bottom,.tg_bottom1{
+	width: 100%;
+	height: 0.7rem;
+}
+.tg_bottom1{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	background: #fff;
+	justify-content: space-around;
+}
+.bt_inner{
+	padding-top: 0.05rem;
+	width: 25%;
+	color: #3E3E3E;
+	font-size: 0.18rem;
+	text-align: center;
+}
+.bt_inner>img{
+	margin: 0 auto;
+	width: 0.25rem;
+	height: 0.25rem;
+	vertical-align: middle;
+}
+.bt_inner>p{
+	padding-top: 0.05rem;
 }
